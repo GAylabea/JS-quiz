@@ -31,6 +31,7 @@ function buildObj (cv, hv) {
   }
   growTree(treeObj)
 } 
+
 // Here is the actual function that tells the computer to build the tree: the formula expressed 
 // tells the computer to subtract 1 space from the line height value selected by the user (H) 
 // the computer is told to do this with a for loop until the line height value is met - then console log that
