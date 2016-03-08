@@ -45,16 +45,12 @@ function growTree (obj) {
 }
 
 button.addEventListener("click", getValue); 
+// This tells the computer to capture both values but since it's a Window value, it does not need to be defined in the same way. the word
+// window could be left out
+window.addEventListener("keypress", checkEnter); 
 
-// This tells the computer to capture both values even if the user presses the Enter key in the input fields
-document.getElementById("treecharacter").onkeydown = function(e) {
-  if (window.event.keyCode === 13) {
-   getValue(); 
-  }
-}
-
-document.getElementById("treeheight").onkeydown = function(e) {
-  if (window.event.keyCode === 13) {
+function checkEnter (e) {
+  if(e.keyCode === 13) {
     getValue();
   }
 }
